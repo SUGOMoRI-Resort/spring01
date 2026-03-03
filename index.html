@@ -78,7 +78,7 @@
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex flex-col">
                 <span class="text-[10px] tracking-[0.2em] text-stone-500 font-bold uppercase font-outfit">Ikuno Kogen Resort</span>
-                <span class="font-black text-xl tracking-tighter text-stone-800">SUGOMoRI <span class="font-light">RESORT</span></span>
+                <span class="font-black text-xl tracking-tighter text-stone-800 uppercase font-outfit">SUGOMoRI <span class="font-light">RESORT</span></span>
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium text-stone-600">
                 <a href="#concept" class="hover:text-green-700 transition">コンセプト</a>
@@ -102,19 +102,14 @@
                 生野高原で、忘れられない春の一ページを。
             </p>
             
-            <!-- ロゴ画像：Spring Vacation 2026を削除し、ロゴを配置 -->
-            <div class="mt-4 flex justify-center fade-in visible">
-                <img src="images/logo1.png" 
-                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" 
-                     alt="SUGOMoRI Resort Logo" 
-                     class="w-48 md:w-64 h-auto drop-shadow-lg">
-                <!-- プレビュー用フォールバック（画像がない場合のみ表示） -->
-                <div class="hidden border border-white/30 px-6 py-4 backdrop-blur-sm text-white text-sm tracking-widest">
-                    [ ロゴ画像: images/logo1.png ]
-                </div>
+            <!-- ロゴ代わりのテキスト -->
+            <div class="mt-8 mb-12 flex justify-center fade-in visible">
+                <span class="text-white text-lg md:text-2xl font-black tracking-[0.3em] drop-shadow-lg">
+                    SUGOMoRIリゾート生野高原
+                </span>
             </div>
 
-            <div class="animate-bounce mt-12">
+            <div class="animate-bounce mt-4">
                 <a href="#concept" class="inline-block p-4 rounded-full border border-white/50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
                 </a>
@@ -295,7 +290,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20 fade-in">
                 <span class="text-sm font-bold text-[#c5a059] tracking-widest block mb-4 uppercase font-outfit">Experiences</span>
-                <h2 class="serif text-4xl font-black text-stone-800 section-title">高原の時間を、もっと豊かに。</h2>
+                <h2 class="serif text-4xl font-black text-stone-800 section-title">高原の時間を、もっと豊かに.</h2>
                 <p class="mt-6 text-stone-500 leading-loose">
                     サウナ、焚き火、大型ブランコ。<br>
                     生野高原の豊かな自然を五感で楽しむ、ここでしか味わえない特別な体験をご用意。
@@ -377,12 +372,9 @@
     <footer class="py-20 bg-stone-50 border-t border-stone-200 px-6 font-medium">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 text-stone-600">
             <div>
-                <!-- テキストを画像に変更 -->
-                <div class="mb-6">
-                    <img src="images/logo2.jpg" 
-                         onerror="this.src='https://via.placeholder.com/150x40?text=logo2.jpg'" 
-                         alt="SUGOMoRI Resort Logo" 
-                         class="h-10 w-auto">
+                <!-- ロゴ画像に代わりテキストを表示 -->
+                <div class="mb-6 font-black text-2xl text-stone-800 tracking-tighter">
+                    SUGOMoRIリゾート生野高原
                 </div>
                 <div class="text-sm leading-relaxed space-y-2">
                     <p>〒679-3331 兵庫県朝来市生野町栃原1784-29</p>
