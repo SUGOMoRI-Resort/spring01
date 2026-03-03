@@ -101,11 +101,20 @@
                 仲間と過ごす、ちょっと大人な高原ステイ。<br>
                 生野高原で、忘れられない春の一ページを。
             </p>
-            <!-- ロゴ画像追加 -->
-            <div class="mb-12 flex justify-center fade-in visible">
-                <img src="images/logo1.png" alt="SUGOMoRI Resort Logo" class="w-48 md:w-64 h-auto drop-shadow-lg">
+            
+            <!-- ロゴ画像：Spring Vacation 2026を削除し、ロゴを配置 -->
+            <div class="mt-4 flex justify-center fade-in visible">
+                <img src="images/logo1.png" 
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" 
+                     alt="SUGOMoRI Resort Logo" 
+                     class="w-48 md:w-64 h-auto drop-shadow-lg">
+                <!-- プレビュー用フォールバック（画像がない場合のみ表示） -->
+                <div class="hidden border border-white/30 px-6 py-4 backdrop-blur-sm text-white text-sm tracking-widest">
+                    [ ロゴ画像: images/logo1.png ]
+                </div>
             </div>
-            <div class="animate-bounce mt-4">
+
+            <div class="animate-bounce mt-12">
                 <a href="#concept" class="inline-block p-4 rounded-full border border-white/50">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
                 </a>
@@ -152,7 +161,7 @@
                 <!-- Dome Koti 651 -->
                 <div class="room-card group fade-in rounded-sm overflow-hidden">
                     <div class="relative overflow-hidden aspect-[16/10]">
-                        <img src="images/dome651.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Dome Koti 651">
+                        <img src="images/dome651.jpg" onerror="this.src='https://via.placeholder.com/800x500?text=images/dome651.jpg'" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Dome Koti 651">
                         <div class="absolute bottom-4 right-4">
                             <span class="bg-black/70 text-white px-4 py-1 text-[10px] font-black tracking-widest uppercase font-outfit">4 Guests</span>
                         </div>
@@ -171,7 +180,7 @@
                 <!-- Col Koti 201 -->
                 <div class="room-card group fade-in rounded-sm overflow-hidden">
                     <div class="relative overflow-hidden aspect-[16/10]">
-                        <img src="images/col201.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Col Koti 201">
+                        <img src="images/col201.jpg" onerror="this.src='https://via.placeholder.com/800x500?text=images/col201.jpg'" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Col Koti 201">
                         <div class="absolute bottom-4 right-4">
                             <span class="bg-black/70 text-white px-4 py-1 text-[10px] font-black tracking-widest uppercase font-outfit">4 Guests</span>
                         </div>
@@ -190,7 +199,7 @@
                 <!-- Tent Koti Kobaco1 -->
                 <div class="room-card group fade-in rounded-sm overflow-hidden">
                     <div class="relative overflow-hidden aspect-[16/10]">
-                        <img src="images/tent.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Tent Koti Kobaco1">
+                        <img src="images/tent.jpg" onerror="this.src='https://via.placeholder.com/800x500?text=images/tent.jpg'" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="Tent Koti Kobaco1">
                         <div class="absolute bottom-4 right-4">
                             <span class="bg-black/70 text-white px-4 py-1 text-[10px] font-black tracking-widest uppercase font-outfit">6 Guests</span>
                         </div>
@@ -209,7 +218,7 @@
                 <!-- VillaKoti S-01 -->
                 <div class="room-card group fade-in rounded-sm overflow-hidden">
                     <div class="relative overflow-hidden aspect-[16/10]">
-                        <img src="images/s01.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="VillaKoti S-01">
+                        <img src="images/s01.jpg" onerror="this.src='https://via.placeholder.com/800x500?text=images/s01.jpg'" class="w-full h-full object-cover group-hover:scale-110 transition duration-1000" alt="VillaKoti S-01">
                         <div class="absolute bottom-4 right-4">
                             <span class="bg-black/70 text-white px-4 py-1 text-[10px] font-black tracking-widest uppercase font-outfit">6 Guests</span>
                         </div>
@@ -244,7 +253,7 @@
                 <!-- BBQ カード -->
                 <div class="dinner-card group fade-in rounded-sm border border-stone-100 flex flex-col overflow-hidden">
                     <div class="aspect-video overflow-hidden">
-                        <img src="images/bbq.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="BBQ">
+                        <img src="images/bbq.jpg" onerror="this.src='https://via.placeholder.com/800x450?text=images/bbq.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="BBQ">
                     </div>
                     <div class="p-8 lg:p-10">
                         <div class="flex items-center gap-4 mb-4">
@@ -262,7 +271,7 @@
                 <!-- レストラン カード -->
                 <div class="dinner-card group fade-in rounded-sm border border-stone-100 flex flex-col overflow-hidden" style="transition-delay: 0.1s;">
                     <div class="aspect-video overflow-hidden">
-                        <img src="images/kassel.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Restaurant Kassel">
+                        <img src="images/kassel.jpg" onerror="this.src='https://via.placeholder.com/800x450?text=images/kassel.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Restaurant Kassel">
                     </div>
                     <div class="p-8 lg:p-10">
                         <div class="flex items-center gap-4 mb-4">
@@ -297,7 +306,7 @@
                 <!-- サウナ -->
                 <div class="bg-white rounded-sm overflow-hidden shadow-sm flex flex-col fade-in">
                     <div class="aspect-video overflow-hidden group">
-                        <img src="images/tentsauna.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Sauna">
+                        <img src="images/tentsauna.jpg" onerror="this.src='https://via.placeholder.com/600x400?text=images/tentsauna.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Sauna">
                     </div>
                     <div class="p-8">
                         <h3 class="serif text-xl font-bold mb-4 text-stone-800">サウナ</h3>
@@ -310,7 +319,7 @@
                 <!-- 焚き火 -->
                 <div class="bg-white rounded-sm overflow-hidden shadow-sm flex flex-col fade-in" style="transition-delay: 0.1s;">
                     <div class="aspect-video overflow-hidden group">
-                        <img src="images/takibi.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Bonfire">
+                        <img src="images/takibi.jpg" onerror="this.src='https://via.placeholder.com/600x400?text=images/takibi.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="Bonfire">
                     </div>
                     <div class="p-8">
                         <h3 class="serif text-xl font-bold mb-4 text-stone-800">焚き火</h3>
@@ -323,7 +332,7 @@
                 <!-- 大型ブランコ -->
                 <div class="bg-white rounded-sm overflow-hidden shadow-sm flex flex-col fade-in" style="transition-delay: 0.2s;">
                     <div class="aspect-video overflow-hidden group">
-                        <img src="images/buranko.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000" alt="Large Swing">
+                        <img src="images/buranko.jpg" onerror="this.src='https://via.placeholder.com/600x400?text=images/buranko.jpg'" class="w-full h-full object-cover group-hover:scale-105 transition duration-1000" alt="Large Swing">
                     </div>
                     <div class="p-8">
                         <h3 class="serif text-xl font-bold mb-4 text-stone-800">大型ブランコ</h3>
@@ -370,7 +379,10 @@
             <div>
                 <!-- テキストを画像に変更 -->
                 <div class="mb-6">
-                    <img src="images/logo2.jpg" alt="SUGOMoRI Resort Logo" class="h-10 w-auto">
+                    <img src="images/logo2.jpg" 
+                         onerror="this.src='https://via.placeholder.com/150x40?text=logo2.jpg'" 
+                         alt="SUGOMoRI Resort Logo" 
+                         class="h-10 w-auto">
                 </div>
                 <div class="text-sm leading-relaxed space-y-2">
                     <p>〒679-3331 兵庫県朝来市生野町栃原1784-29</p>
